@@ -1,0 +1,344 @@
+body{
+    margin: 0px;
+}
+.navbar{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-color: cornflowerblue;
+    
+}
+.unlist{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    align-items: center;
+    color: floralwhite;
+    cursor: pointer;
+}
+.link:hover{
+    color: springgreen;
+    cursor: pointer;
+}
+.textTopMain{
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    background-color: #00000003;
+    color: white;
+}
+.headTextMain{
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0 0 10px;
+
+}
+.subTextMain{
+    font-size: 20px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0 0 10px;
+}
+.textMain{
+    font-size: 20px;
+}
+.buttonMain{
+    margin-left: 35%;
+    background-color: #00000003;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 1;
+    padding: 16px 24px;
+    text-align: center;
+    text-transform: uppercase;
+    width: auto;
+    border: white 1px solid;
+}
+.buttonMain:hover{
+    color: springgreen;
+    border: springgreen 1px solid;
+}
+.contentInfo{
+    display: flex;
+    gap: 1rem;
+    padding: 2rem 0rem;
+    align-content: space-between;
+}
+.bookingButton{
+    border-style: none;
+    border-radius: 15px;
+    width: 15%;
+    cursor: pointer;
+}
+.bookingButton:hover{
+    background-color: cornflowerblue;
+    color: springgreen;
+}
+.services{
+    background-color: cornflowerblue;
+    padding: 1rem 0rem;
+}
+.servicesMainText{
+    color: floralwhite;
+    font-size: 3rem;
+}
+.servicesTextC{
+    color: springgreen;
+}
+.cardsRemover{
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+    gap: 3rem;
+}
+.cards{
+    background-color: white;
+    border-radius: 8px;
+    text-align: center;
+}
+.cardImg{height: 10rem;
+}
+.greenArrow{
+    color: springgreen;
+    cursor: pointer;
+}
+.textCardBox{
+    padding-bottom:10% ;
+}
+.cardsTextM{
+    font-size: 2rem;
+    color: cadetblue;
+    margin-bottom: 0px;
+    text-align: center;
+}
+.cardsTextR{
+    display: inline;
+    font-size: 1.5rem;
+    color: cadetblue;
+    text-align: center;
+    margin-right: 10px;
+    margin-left: 8%;
+    cursor: pointer;
+}
+.cardsTextR:hover{
+    cursor: pointer;
+    color: springgreen;
+}
+.aboutUs{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 0rem;
+}
+.aboutText{
+    color: cornflowerblue;
+    font-size: 3rem;
+}
+.fakeImgMe{
+    width: 70%;
+    border-radius: 5%;
+    
+}
+.TextAboutMe{
+    align-self: center;
+}
+.fakeTextAboutMe{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: deepskyblue;
+}
+.learnAboutMe{
+    padding: 1.5rem;
+    border-radius: 15px;
+    border-style: none;
+    width: 50%;
+    cursor: pointer;
+}
+.learnAboutMe:hover{
+    background-color: cornflowerblue;
+    color: springgreen;
+}
+.banding{
+
+}
+.bandText{
+    color: cornflowerblue;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 0px;
+}
+.bandingImgs{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 2rem;
+    padding: 2rem 0rem 4rem ;
+}
+.bandLogo1{
+    height: 10rem;
+}
+.bandLogo2{
+    height: 5rem;
+    align-self: center;
+}
+.bandLogo3{
+    align-self: stretch;
+}
+.bandLogo4{
+    height: 10rem;
+}
+.bandLogo5{
+    height: 10rem;
+}
+
+.faq{
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+    background-color: cornflowerblue;
+    padding: 2rem 0rem;
+}
+.carFaqImgBox{
+}
+.carFaqImg{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+.faqGroup{  
+    background-color: white;
+    border-radius: 20px;
+    padding: 1rem;
+    margin: 1rem;
+    }
+.mainFaqText{   
+    font-size: 3rem;
+    color: cadetblue;}
+.textFaqGroup{
+}
+.question {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom-style: solid;
+    border-bottom-color: springgreen;
+    color: cornflowerblue;
+}    
+.answer {
+    color: cornflowerblue;
+}
+.reveiw{}
+.reveiwTile{
+    text-align: center;
+    font-size: 3rem;
+    color: cadetblue;
+}
+.reveiwSubText{
+    text-align: center;
+    font-size: 2rem;
+    color: cornflowerblue;
+}
+.reveiwCardGroup{
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+    gap: 3rem;
+}
+.reveiwCard{}
+.reveiwCardMainText{
+    font-size: 1.5rem;
+    color: cornflowerblue;
+}
+.reveiwCardSubText{
+    color: cornflowerblue;
+}
+.avatarInfo{
+    display: flex;
+}
+.reveiwCardImg{
+    border-radius: 50%;
+    height: 50px;
+}
+.customerInfo{
+    margin-left: 5%;
+    
+}
+.reveiwCardAvatarName{
+    margin-bottom: 0px;
+    color: springgreen;
+    
+}
+.reveiwCardAvatarTitle{
+    margin-top: 0px;
+    color: springgreen;
+    margin-bottom: 0px;
+}
+.contentUs{
+    background-color: cornflowerblue;}    
+.contentUsText{
+    font-size: 2.5rem;
+    text-align: center;
+    color: floralwhite;}
+.contentUsTextC{
+    color: springgreen;
+}    
+.contentUsBox{
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    gap: 5rem;
+}
+.map{
+    border-radius: 2%;
+}
+.quoteText{
+    font-size: 2rem;
+    color: cornflowerblue;
+}
+.messageBox{
+    background-color: white; 
+    padding: 2rem;
+    border-radius: 10px;
+}
+.messageForm{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-self: center;
+    height: 80%;
+}
+#firstName{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+#lastName{
+    grid-column-start: 2;
+    grid-row: 1;
+    grid-column-end: 2;
+    grid-row-end: 1;
+}
+#telephone{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+} 
+#yourProgram{   
+    grid-column-start: 1;
+    grid-row-start: 3;
+    grid-column-end: 3;
+    grid-row-end: 4;
+}
+.submitButton{
+    cursor: pointer;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    border-style: none;
+    border-radius: 5px;
+    margin-top: 10%;
+}
+.submitButton:hover{
+    background-color: cornflowerblue;
+    color: springgreen;
+}
