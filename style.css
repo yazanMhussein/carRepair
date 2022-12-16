@@ -5,7 +5,6 @@ body{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     background-color: cornflowerblue;
-    
 }
 .unlist{
     display: flex;
@@ -14,6 +13,8 @@ body{
     align-items: center;
     color: floralwhite;
     cursor: pointer;
+    justify-content: end;
+    margin-right: 3rem;
 }
 .link:hover{
     color: springgreen;
@@ -64,14 +65,17 @@ body{
 }
 .contentInfo{
     display: flex;
-    gap: 1rem;
+    gap: 0rem;
     padding: 2rem 0rem;
-    align-content: space-between;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 .bookingButton{
     border-style: none;
     border-radius: 15px;
     width: 15%;
+    height: 50px;
+    place-self: center;
     cursor: pointer;
 }
 .bookingButton:hover{
@@ -99,7 +103,8 @@ body{
     border-radius: 8px;
     text-align: center;
 }
-.cardImg{height: 10rem;
+.cardImg{
+    height: 10rem;
 }
 .greenArrow{
     color: springgreen;
@@ -154,6 +159,7 @@ body{
     border-radius: 15px;
     border-style: none;
     width: 50%;
+    margin: 0% 20%;
     cursor: pointer;
 }
 .learnAboutMe:hover{
@@ -216,7 +222,7 @@ body{
     color: cadetblue;}
 .textFaqGroup{
 }
-.question {
+.question,.question4 ,.question5 {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -224,7 +230,7 @@ body{
     border-bottom-color: springgreen;
     color: cornflowerblue;
 }    
-.answer {
+.answer,.answer4 ,.answer5 {
     color: cornflowerblue;
 }
 .reveiw{}
@@ -290,6 +296,8 @@ body{
 }
 .map{
     border-radius: 2%;
+    width: 90%;
+    
 }
 .quoteText{
     font-size: 2rem;
@@ -336,9 +344,2198 @@ body{
     grid-column-end: 3;
     border-style: none;
     border-radius: 5px;
-    margin-top: 10%;
+    margin-top: 3%;
 }
 .submitButton:hover{
     background-color: cornflowerblue;
     color: springgreen;
 }
+
+
+
+
+/*smart watch small moblie dev */
+@media screen and (min-width:320px) and (max-width:345px) {
+    body{
+        margin: 0px;
+    }
+    .navbar{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        background-color: cornflowerblue;
+    }
+    .navImg{
+            height: 100%;
+            width: 200px;
+        
+    }
+    .unlist{
+        display: flex;
+        list-style: none;
+        gap: 2rem;
+        align-items: center;
+        color: floralwhite;
+        cursor: pointer;
+    }
+    .link:hover{
+        color: springgreen;
+        cursor: pointer;
+    }
+    .textTopMain{
+        position: absolute;
+        top: 20%;
+        left: 15%;
+        background-color: #00000003;
+        color: white;
+    }
+    .headTextMain{
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 1.2;
+        margin: 0 0 10px;
+    
+    }
+    .subTextMain{
+        font-size: 10px;
+        margin-bottom: 30px;
+        font-weight: 700;
+        line-height: 1.2;
+        margin: 0 0 10px;
+    }
+    .textMain{
+        font-size: 0px;
+    }
+    .buttonMain{
+        margin-left: 0%;
+        background-color: #00000003;
+        color: white;
+        cursor: pointer;
+        font-size: 6px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        line-height: 1;
+        padding: 10px 24px;
+        text-transform: uppercase;
+        width: auto;
+        border: white 1px solid;
+    }
+    .buttonMain:hover{
+        color: springgreen;
+        border: springgreen 1px solid;
+    }
+    .contentInfo{
+        display: flex;
+        gap: 1rem;
+        padding: 2rem 0rem;
+        flex-wrap: wrap;
+        align-content: space-between;
+    }
+    .bookingButton{
+        border-style: none;
+        border-radius: 15px;
+        width: 100%;
+        cursor: pointer;
+        font-size: 2rem; 
+    }
+    .bookingButton:hover{
+        background-color: cornflowerblue;
+        color: springgreen;
+    }
+    .services{
+        background-color: cornflowerblue;
+        padding: 1rem 0rem;
+    }
+    .servicesMainText{
+        color: floralwhite;
+        font-size: 3rem;
+    }
+    .servicesTextC{
+        color: springgreen;
+    }
+    .cardsRemover{
+        display: grid;
+        grid-template-columns: repeat(1,2fr);
+        gap: 3rem;
+    }
+    .cards{
+        background-color: white;
+        border-radius: 8px;
+        text-align: center;
+        width: 90%;
+        justify-self: center;
+    }
+    .cardImg{
+        height: 10rem;
+        width: 100%;
+    }
+    .greenArrow{
+        color: springgreen;
+        cursor: pointer;
+    }
+    .textCardBox{
+        padding-bottom:10% ;
+    }
+    .cardsTextM{
+        font-size: 2rem;
+        color: cadetblue;
+        margin-bottom: 0px;
+        text-align: center;
+    }
+    .cardsTextR{
+        display: inline;
+        font-size: 1.5rem;
+        color: cadetblue;
+        text-align: center;
+        margin-right: 10px;
+        margin-left: 8%;
+        cursor: pointer;
+    }
+    .cardsTextR:hover{
+        cursor: pointer;
+        color: springgreen;
+    }
+    .aboutUs{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        padding: 0rem;
+    }
+    .aboutText{
+        color: cornflowerblue;
+        font-size: 4rem;
+        margin-bottom: 0px;
+    }
+    .fakeImgMe{
+        width: 100%;
+        border-radius: 5%;
+        
+    }
+    .TextAboutMe{
+        align-self: center;
+    }
+    .fakeTextAboutMe{
+        font-size: 1rem;
+        line-height: 2rem;
+        color: deepskyblue;
+    }
+    .learnAboutMe{
+        padding: 0rem;
+        border-radius: 15px;
+        border-style: none;
+        width: 100%;
+        cursor: pointer;
+        font-size: 2rem;
+    }
+    .learnAboutMe:hover{
+        background-color: cornflowerblue;
+        color: springgreen;
+    }
+    .banding{
+    
+    }
+    .bandText{
+        color: cornflowerblue;
+        text-align: center;
+        font-size: 3rem;
+        margin-bottom: 0px;
+    }
+    .bandingImgs{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        row-gap: 4rem;
+        padding: 2rem 0rem 4rem ;
+    }
+    .bandLogo1{
+        height: 10rem;
+        justify-self: center;
+    }
+    .bandLogo2{
+        height: 5rem;
+        align-self: center;
+        justify-self: center;
+    }
+    .bandLogo3{
+        justify-self: center;
+        width: 75%;
+    }
+    .bandLogo4{
+        height: 10rem;
+        justify-self: center;
+    }
+    .bandLogo5{
+        height: 10rem;
+        justify-self: center;
+    }
+    
+    .faq{
+        display: grid;
+        grid-template-columns: repeat(1,2fr);
+        background-color: cornflowerblue;
+        padding: 2rem 0rem;
+    }
+    .carFaqImgBox{
+    }
+    .carFaqImg{
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+    }
+    .faqGroup{  
+        background-color: white;
+        border-radius: 20px;
+        padding: 1rem;
+        margin: 1rem;
+        }
+    .mainFaqText{   
+        font-size: 3rem;
+        color: cadetblue;}
+    .textFaqGroup{
+    }
+    .question {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        border-bottom-style: solid;
+        border-bottom-color: springgreen;
+        color: cornflowerblue;
+    }    
+    .answer {
+        color: cornflowerblue;
+    }
+    .question4 ,.question5 ,.answer4,.answer5{
+        display: none;
+    }
+    .reveiw{}
+    .reveiwTile{
+        text-align: center;
+        font-size: 3rem;
+        color: cadetblue;
+    }
+    .reveiwSubText{
+        text-align: center;
+        font-size: 2rem;
+        color: cornflowerblue;
+    }
+    .reveiwCardGroup{
+        display: grid;
+        grid-template-columns: repeat(1,2fr);
+        row-gap: 5rem;
+    }
+    .reveiwCard{
+        display: grid;
+    }
+    .reveiwCardMainText{
+        font-size: 1.5rem;
+        color: cornflowerblue;
+    }
+    .reveiwCardSubText{
+        color: cornflowerblue;
+    }
+    .avatarInfo{
+        display: flex;
+        grid-row-start: 1;
+        gap: 1rem;
+    }
+    .reveiwCardImg{
+        border-radius: 50%;
+        height: 100px;
+    }
+    .customerInfo{
+        margin-left: 5%;
+        
+    }
+    .reveiwCardAvatarName{
+        margin-bottom: 0px;
+        color: springgreen;
+        
+    }
+    .reveiwCardAvatarTitle{
+        margin-top: 0px;
+        color: springgreen;
+        margin-bottom: 0px;
+    }
+    .contentUs{
+        background-color: cornflowerblue;}    
+    .contentUsText{
+        font-size: 2.5rem;
+        text-align: center;
+        color: floralwhite;}
+    .contentUsTextC{
+        color: springgreen;
+    }    
+    .contentUsBox{
+        display: grid;
+        grid-template-columns: repeat(1,2fr);
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+        gap: 5rem;
+    }
+    .map{
+        border-radius: 2%;
+        height: 20rem;
+        width: 100%;
+    }
+    .quoteText{
+        font-size: 2rem;
+        color: cornflowerblue;
+    }
+    .messageBox{
+        background-color: white; 
+        padding-bottom: 4rem;
+        border-radius: 10px;
+    }
+    .messageForm{
+        display: block;
+        justify-self: center;
+        height: 35%;
+    }
+    
+    .submitButton{
+        cursor: pointer;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        border-style: none;
+        border-radius: 5px;
+        width: 90%;
+        font-size: 2rem;
+    }
+    .submitButton:hover{
+        background-color: cornflowerblue;
+        color: springgreen;
+    }
+
+  
+    }
+/* middle mobile dev */
+@media screen and (min-width:345px) and (max-width:420px) {
+    body{
+        margin: 0px;
+    }
+    .navbar{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        background-color: cornflowerblue;
+    }
+    .navImg{
+            height: 100%;
+            width: 200px;
+        
+    }
+    .unlist{
+        display: flex;
+        list-style: none;
+        gap: 2rem;
+        align-items: center;
+        color: floralwhite;
+        cursor: pointer;
+    }
+    .link:hover{
+        color: springgreen;
+        cursor: pointer;
+    }
+    .textTopMain{
+        position: absolute;
+        top: 20%;
+        left: 15%;
+        background-color: #00000003;
+        color: white;
+    }
+    .headTextMain{
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 1.2;
+        margin: 0 0 10px;
+    
+    }
+    .subTextMain{
+        font-size: 15px;
+        margin-bottom: 30px;
+        font-weight: 700;
+        line-height: 1.2;
+        margin: 0 0 10px;
+    }
+    .textMain{
+        font-size: 0px;
+    }
+    .buttonMain{
+        margin-left: 10%;
+        background-color: #00000003;
+        color: white;
+        cursor: pointer;
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        line-height: 1;
+        padding: 10px 24px;
+        text-transform: uppercase;
+        width: auto;
+        border: white 1px solid;
+    }
+    .buttonMain:hover{
+        color: springgreen;
+        border: springgreen 1px solid;
+    }
+    .contentInfo{
+        display: flex;
+        gap: 2rem;
+        padding: 2rem 0rem;
+        flex-wrap: wrap;
+        align-content: space-between;
+    }
+    .phoneNumberImg{
+        margin-right: 5%;
+    }
+    .bookingButton{
+        margin: auto;
+        border-style: none;
+        border-radius: 15px;
+        width: 50%;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+    .bookingButton:hover{
+        background-color: cornflowerblue;
+        color: springgreen;
+    }
+    .services{
+        background-color: cornflowerblue;
+        padding: 1rem 0rem;
+    }
+    .servicesMainText{
+        color: floralwhite;
+        font-size: 4rem;
+    }
+    .servicesTextC{
+        color: springgreen;
+    }
+    .cardsRemover{
+        display: grid;
+        grid-template-columns: repeat(1,2fr);
+        gap: 3rem;
+    }
+    .cards{
+        background-color: white;
+        border-radius: 8px;
+        text-align: center;
+        width: 90%;
+        justify-self: center;
+    }
+    .cardImg{
+        height: 10rem;
+        width: 100%;
+    }
+    .greenArrow{
+        color: springgreen;
+        cursor: pointer;
+    }
+    .textCardBox{
+        padding-bottom:10% ;
+    }
+    .cardsTextM{
+        font-size: 2rem;
+        color: cadetblue;
+        margin-bottom: 0px;
+        text-align: center;
+    }
+    .cardsTextR{
+        display: inline;
+        font-size: 1.5rem;
+        color: cadetblue;
+        text-align: center;
+        margin-right: 10px;
+        margin-left: 8%;
+        cursor: pointer;
+    }
+    .cardsTextR:hover{
+        cursor: pointer;
+        color: springgreen;
+    }
+    .aboutUs{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        padding: 0rem;
+    }
+    .aboutText{
+        color: cornflowerblue;
+        font-size: 4rem;
+        margin-bottom: 0px;
+    }
+    .fakeImgMe{
+        width: 100%;
+        border-radius: 5%;
+        
+    }
+    .TextAboutMe{
+        align-self: center;
+    }
+    .fakeTextAboutMe{
+        font-size: 1rem;
+        line-height: 2rem;
+        color: deepskyblue;
+    }
+    .learnAboutMe{
+        padding: 0rem;
+        border-radius: 15px;
+        border-style: none;
+        width: 70%;
+        cursor: pointer;
+        font-size: 2rem;
+        margin-left: 15%;
+    }
+    .learnAboutMe:hover{
+        background-color: cornflowerblue;
+        color: springgreen;
+    }
+    .banding{
+    
+    }
+    .bandText{
+        color: cornflowerblue;
+        text-align: center;
+        font-size: 3rem;
+        margin-bottom: 0px;
+    }
+    .bandingImgs{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        row-gap: 4rem;
+        padding: 2rem 0rem 4rem ;
+    }
+    .bandLogo1{
+        height: 10rem;
+        justify-self: center;
+    }
+    .bandLogo2{
+        height: 5rem;
+        align-self: center;
+        justify-self: center;
+    }
+    .bandLogo3{
+        justify-self: center;
+        width: 75%;
+    }
+    .bandLogo4{
+        height: 10rem;
+        justify-self: center;
+    }
+    .bandLogo5{
+        height: 10rem;
+        justify-self: center;
+    }
+    
+    .faq{
+        display: grid;
+        grid-template-columns: repeat(1,2fr);
+        background-color: cornflowerblue;
+        padding: 2rem 0rem;
+    }
+    .carFaqImgBox{
+    }
+    .carFaqImg{
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+    }
+    .faqGroup{  
+        background-color: white;
+        border-radius: 20px;
+        padding: 1rem;
+        margin: 1rem;
+        }
+    .mainFaqText{   
+        font-size: 3rem;
+        color: cadetblue;}
+    .textFaqGroup{
+    }
+    .question {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        border-bottom-style: solid;
+        border-bottom-color: springgreen;
+        color: cornflowerblue;
+    }    
+    .answer {
+        color: cornflowerblue;
+    }
+    .reveiw{}
+    .reveiwTile{
+        text-align: center;
+        font-size: 3rem;
+        color: cadetblue;
+    }
+    .reveiwSubText{
+        text-align: center;
+        font-size: 2rem;
+        color: cornflowerblue;
+    }
+    .reveiwCardGroup{
+        display: grid;
+        grid-template-columns: repeat(1,2fr);
+        row-gap: 5rem;
+    }
+    .reveiwCard{
+        display: grid;
+    }
+    .reveiwCardMainText{
+        font-size: 1.5rem;
+        color: cornflowerblue;
+    }
+    .reveiwCardSubText{
+        color: cornflowerblue;
+    }
+    .avatarInfo{
+        display: flex;
+        grid-row-start: 1;
+        gap: 1rem;
+        justify-content: center;
+    }
+    .reveiwCardImg{
+        border-radius: 50%;
+        height: 100px;
+    }
+    .customerInfo{
+        margin-left: 5%;
+        
+    }
+    .reveiwCardAvatarName{
+        margin-bottom: 0px;
+        color: springgreen;
+        
+    }
+    .reveiwCardAvatarTitle{
+        margin-top: 0px;
+        color: springgreen;
+        margin-bottom: 0px;
+    }
+    .contentUs{
+        background-color: cornflowerblue;}    
+    .contentUsText{
+        font-size: 3rem;
+        text-align: center;
+        color: floralwhite;}
+    .contentUsTextC{
+        color: springgreen;
+    }    
+    .contentUsBox{
+        display: grid;
+        grid-template-columns: repeat(1,2fr);
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+        gap: 5rem;
+    }
+    .map{
+        border-radius: 2%;
+        height: 20rem;
+        width: 100%;
+    }
+    .quoteText{
+        font-size: 2rem;
+        color: cornflowerblue;
+    }
+    .messageBox{
+        background-color: white; 
+        padding-bottom: 4rem;
+        border-radius: 10px;
+    }
+    .messageForm{
+        display: block;
+        justify-self: center;
+        height: 35%;
+    }
+    #firstName{
+        font-size: 1.5rem;
+    }
+    #lastName{
+        font-size: 1.5rem;
+    }
+    #telephone{
+        font-size: 1.5rem;
+    } 
+    #yourProgram{   
+        font-size: 1.079rem;
+    }
+    
+    .submitButton{
+        cursor: pointer;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        border-style: none;
+        border-radius: 5px;
+        width: 90%;
+        font-size: 2rem;
+    }
+    .submitButton:hover{
+        background-color: cornflowerblue;
+        color: springgreen;
+    }
+
+  
+}
+/* lager mobile dev */
+@media screen and (min-width:421px) and (max-width:679px) {
+    body{
+        margin: 0px;
+    }
+    .navbar{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        background-color: cornflowerblue;
+    }
+    .navImg{
+            height: 100%;
+            width: 200px;
+        
+    }
+    .unlist{
+        display: flex;
+        list-style: none;
+        gap: 2rem;
+        align-items: center;
+        color: floralwhite;
+        cursor: pointer;
+    }
+    .link:hover{
+        color: springgreen;
+        cursor: pointer;
+    }
+    .textTopMain{
+        position: absolute;
+        top: 20%;
+        left: 15%;
+        background-color: #00000003;
+        color: white;
+    }
+    .headTextMain{
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 1.2;
+        margin: 0 0 10px;
+    
+    }
+    .subTextMain{
+        font-size: 20px;
+        margin-bottom: 30px;
+        font-weight: 700;
+        line-height: 1.2;
+        margin: 0 0 10px;
+    }
+    .textMain{
+        font-size: 0px;
+    }
+    .buttonMain{
+        margin-left: 10%;
+        background-color: #00000003;
+        color: white;
+        cursor: pointer;
+        font-size: 15px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        line-height: 1;
+        padding: 10px 24px;
+        text-transform: uppercase;
+        width: auto;
+        border: white 1px solid;
+    }
+    .buttonMain:hover{
+        color: springgreen;
+        border: springgreen 1px solid;
+    }
+    .contentInfo{
+        display: grid;
+        padding: 2rem 0rem;
+        place-items: center;
+        align-content: space-between;
+    }
+    .phoneNumberImg{
+        margin-right: 5%;
+    }
+    .bookingButton{
+        margin: auto;
+        border-style: none;
+        border-radius: 15px;
+        width: 50%;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+    .bookingButton:hover{
+        background-color: cornflowerblue;
+        color: springgreen;
+    }
+    .services{
+        background-color: cornflowerblue;
+        padding: 1rem 0rem;
+    }
+    .servicesMainText{
+        color: floralwhite;
+        font-size: 4rem;
+    }
+    .servicesTextC{
+        color: springgreen;
+    }
+    .cardsRemover{
+        display: grid;
+        grid-template-columns: repeat(1,2fr);
+        gap: 3rem;
+    }
+    .cards{
+        background-color: white;
+        border-radius: 8px;
+        text-align: center;
+        width: 90%;
+        justify-self: center;
+    }
+    .cardImg{
+        height: 10rem;
+        width: 100%;
+    }
+    .greenArrow{
+        color: springgreen;
+        cursor: pointer;
+    }
+    .textCardBox{
+        padding-bottom:10% ;
+    }
+    .cardsTextM{
+        font-size: 2rem;
+        color: cadetblue;
+        margin-bottom: 0px;
+        text-align: center;
+    }
+    .cardsTextR{
+        display: inline;
+        font-size: 1.5rem;
+        color: cadetblue;
+        text-align: center;
+        margin-right: 10px;
+        margin-left: 8%;
+        cursor: pointer;
+    }
+    .cardsTextR:hover{
+        cursor: pointer;
+        color: springgreen;
+    }
+    .aboutUs{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        padding: 0rem;
+    }
+    .aboutText{
+        color: cornflowerblue;
+        font-size: 4rem;
+        margin-bottom: 0px;
+    }
+    .fakeImgMe{
+        width: 100%;
+        border-radius: 5%;
+        
+    }
+    .TextAboutMe{
+        align-self: center;
+    }
+    .fakeTextAboutMe{
+        font-size: 1rem;
+        line-height: 2rem;
+        color: deepskyblue;
+    }
+    .learnAboutMe{
+        padding: 0rem;
+        border-radius: 15px;
+        border-style: none;
+        width: 70%;
+        cursor: pointer;
+        font-size: 2rem;
+        margin-left: 15%;
+    }
+    .learnAboutMe:hover{
+        background-color: cornflowerblue;
+        color: springgreen;
+    }
+    .banding{
+    
+    }
+    .bandText{
+        color: cornflowerblue;
+        text-align: center;
+        font-size: 4rem;
+        margin-bottom: 0px;
+    }
+    .bandingImgs{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        row-gap: 4rem;
+        padding: 2rem 0rem 4rem ;
+    }
+    .bandLogo1{
+        height: 10rem;
+        justify-self: center;
+    }
+    .bandLogo2{
+        height: 5rem;
+        align-self: center;
+        justify-self: center;
+    }
+    .bandLogo3{
+        justify-self: center;
+        width: 75%;
+    }
+    .bandLogo4{
+        height: 10rem;
+        justify-self: center;
+    }
+    .bandLogo5{
+        height: 10rem;
+        justify-self: center;
+    }
+    
+    .faq{
+        display: grid;
+        grid-template-columns: repeat(1,2fr);
+        background-color: cornflowerblue;
+        padding: 2rem 0rem;
+    }
+    .carFaqImgBox{
+    }
+    .carFaqImg{
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+    }
+    .faqGroup{  
+        background-color: white;
+        border-radius: 20px;
+        padding: 1rem;
+        margin: 1rem;
+        }
+    .mainFaqText{   
+        font-size: 3rem;
+        color: cadetblue;}
+    .textFaqGroup{
+    }
+    .question {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        border-bottom-style: solid;
+        border-bottom-color: springgreen;
+        color: cornflowerblue;
+    }    
+    .answer {
+        color: cornflowerblue;
+    }
+    .reveiw{}
+    .reveiwTile{
+        text-align: center;
+        font-size: 3rem;
+        color: cadetblue;
+    }
+    .reveiwSubText{
+        text-align: center;
+        font-size: 2rem;
+        color: cornflowerblue;
+    }
+    .reveiwCardGroup{
+        display: grid;
+        grid-template-columns: repeat(1,2fr);
+        row-gap: 5rem;
+    }
+    .reveiwCard{
+        display: grid;
+    }
+    .reveiwCardMainText{
+        font-size: 1.5rem;
+        color: cornflowerblue;
+    }
+    .reveiwCardSubText{
+        color: cornflowerblue;
+    }
+    .avatarInfo{
+        display: flex;
+        grid-row-start: 1;
+        gap: 1rem;
+        justify-content: center;
+    }
+    .reveiwCardImg{
+        border-radius: 50%;
+        height: 100px;
+    }
+    .customerInfo{
+        margin-left: 5%;
+        
+    }
+    .reveiwCardAvatarName{
+        margin-bottom: 0px;
+        color: springgreen;
+        
+    }
+    .reveiwCardAvatarTitle{
+        margin-top: 0px;
+        color: springgreen;
+        margin-bottom: 0px;
+    }
+    .contentUs{
+        background-color: cornflowerblue;}    
+    .contentUsText{
+        font-size: 3rem;
+        text-align: center;
+        color: floralwhite;}
+    .contentUsTextC{
+        color: springgreen;
+    }    
+    .contentUsBox{
+        display: grid;
+        grid-template-columns: repeat(1,2fr);
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+        gap: 5rem;
+    }
+    .map{
+        border-radius: 2%;
+        height: 20rem;
+        width: 100%;
+    }
+    .quoteText{
+        font-size: 2rem;
+        color: cornflowerblue;
+    }
+    .messageBox{
+        background-color: white; 
+        padding-bottom: 4rem;
+        border-radius: 10px;
+    }
+    .messageForm{
+        display: block;
+        justify-self: center;
+        height: 35%;
+    }
+    #firstName{
+        font-size: 1.7rem;
+    }
+    #lastName{
+        font-size: 1.7rem;
+    }
+    #telephone{
+        font-size: 1.7rem;
+    } 
+    #yourProgram{  
+        font-size: 1.2rem;
+    }
+    
+    .submitButton{
+        cursor: pointer;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        border-style: none;
+        border-radius: 5px;
+        width: 95%;
+        font-size: 2rem;
+    }
+    .submitButton:hover{
+        background-color: cornflowerblue;
+        color: springgreen;
+    }
+
+  
+}
+
+/* tables */
+@media screen and (min-width:680px) and (max-width:1023px) {
+    body{
+        margin: 0px;
+    }
+    .navbar{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        background-color: cornflowerblue;
+    }
+    .unlist{
+        display: flex;
+        list-style: none;
+        gap: 2rem;
+        align-items: center;
+        color: floralwhite;
+        cursor: pointer;
+    }
+    .link:hover{
+        color: springgreen;
+        cursor: pointer;
+    }
+    .textTopMain{
+        position: absolute;
+        top: 25%;
+        left: 12%;
+        background-color: #00000003;
+        color: white;
+    }
+    .headTextMain{
+        font-size: 72px;
+        font-weight: 700;
+        line-height: 1.2;
+        text-align: center;
+        margin: 0 0 10px;
+    
+    }
+    .subTextMain{
+        font-size: 20px;
+        margin-bottom: 30px;
+        font-weight: 700;
+        line-height: 1.2;
+        margin: 0 0 10px;
+    }
+    .textMain{
+        font-size: 0px;
+    }
+    .buttonMain{
+        margin-left: 25%;
+        background-color: #00000003;
+        color: white;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        line-height: 1;
+        padding: 16px 24px;
+        text-align: center;
+        text-transform: uppercase;
+        width: auto;
+        border: white 1px solid;
+    }
+    .buttonMain:hover{
+        color: springgreen;
+        border: springgreen 1px solid;
+    }
+    .contentInfo{
+        display: flex;
+        gap: 1rem;
+        padding: 2rem 0rem;
+        align-content: space-between;
+    }
+    .contentInfoImg{
+        height: 90%;
+    }
+    .contentInfoText{
+        font-size: .9rem;
+    }
+    .bookingButton{
+        display: flex;
+        border-style: none;
+        border-radius: 15px;
+        width: 45%;
+        cursor: pointer;
+        height: 4rem;
+        align-self: center;
+        font-size: 1rem;
+        align-items: center;
+        padding: 0rem 5rem;
+    }
+    .bookingButton:hover{
+        background-color: cornflowerblue;
+        color: springgreen;
+    }
+    .services{
+        background-color: cornflowerblue;
+        padding: 1rem 0rem;
+    }
+    .servicesMainText{
+        color: floralwhite;
+        font-size: 3rem;
+    }
+    .servicesTextC{
+        color: springgreen;
+    }
+    .cardsRemover{
+        display: grid;
+        grid-template-columns: repeat(2,2fr);
+        gap: 3rem;
+    }
+    .cards{
+        background-color: white;
+        border-radius: 8px;
+        text-align: center;
+    }
+    .cardImg{
+        height: 10rem;
+    }
+    .greenArrow{
+        color: springgreen;
+        cursor: pointer;
+    }
+    .textCardBox{
+        padding-bottom:10% ;
+    }
+    .cardsTextM{
+        font-size: 2rem;
+        color: cadetblue;
+        margin-bottom: 0px;
+        text-align: center;
+    }
+    .cardsTextR{
+        display: inline;
+        font-size: 1.5rem;
+        color: cadetblue;
+        text-align: center;
+        margin-right: 10px;
+        margin-left: 8%;
+        cursor: pointer;
+    }
+    .cardsTextR:hover{
+        cursor: pointer;
+        color: springgreen;
+    }
+    .aboutUs{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        padding: 0rem;
+    }
+    .aboutText{
+        color: cornflowerblue;
+        font-size: 4rem;
+    }
+    .fakeImgMe{
+        width: 90%;
+        height: 100%;
+        border-radius: 5%;
+        
+    }
+    .TextAboutMe{
+        align-self: center;
+    }
+    .fakeTextAboutMe{
+        font-size: 1rem;
+        line-height: 2rem;
+        color: deepskyblue;
+    }
+    .learnAboutMe{
+        padding: 0.8rem;
+        border-radius: 15px;
+        border-style: none;
+        width: 100%;
+        cursor: pointer;
+        font-size: 2rem;
+    }
+    .learnAboutMe:hover{
+        background-color: cornflowerblue;
+        color: springgreen;
+    }
+    .banding{
+    
+    }
+    .bandText{
+        color: cornflowerblue;
+        text-align: center;
+        font-size: 3rem;
+        margin-bottom: 0px;
+    }
+    .bandingImgs{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+        padding: 2rem 0rem 4rem ;
+    }
+    .bandLogo1{
+        height: 10rem;
+    }
+    .bandLogo2{
+        height: 5rem;
+        align-self: center;
+    }
+    .bandLogo3{
+        align-self: stretch;
+    }
+    .bandLogo4{
+        height: 10rem;
+    }
+    .bandLogo5{
+        height: 10rem;
+    }
+    
+    .faq{
+        display: grid;
+        grid-template-columns: repeat(1,2fr);
+        background-color: cornflowerblue;
+        padding: 2rem 0rem;
+    }
+    .carFaqImgBox{
+    }
+    .carFaqImg{
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+    }
+    .faqGroup{  
+        background-color: white;
+        border-radius: 20px;
+        padding: 1rem;
+        margin: 1rem;
+        }
+    .mainFaqText{   
+        font-size: 3rem;
+        color: cadetblue;}
+    .textFaqGroup{
+    }
+    .question,.question4 ,.question5 {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        border-bottom-style: solid;
+        border-bottom-color: springgreen;
+        color: cornflowerblue;
+    }    
+    .answer,.answer4 ,.answer5 {
+        color: cornflowerblue;
+    }
+    .reveiw{}
+    .reveiwTile{
+        text-align: center;
+        font-size: 3rem;
+        color: cadetblue;
+    }
+    .reveiwSubText{
+        text-align: center;
+        font-size: 2rem;
+        color: cornflowerblue;
+    }
+    .reveiwCardGroup{
+        display: grid;
+        grid-template-columns: repeat(3,2fr);
+        gap: 3rem;
+    }
+    .reveiwCard{}
+    .reveiwCardMainText{
+        font-size: 1.5rem;
+        color: cornflowerblue;
+    }
+    .reveiwCardSubText{
+        color: cornflowerblue;
+    }
+    .avatarInfo{
+        display: flex;
+    }
+    .reveiwCardImg{
+        border-radius: 50%;
+        height: 50px;
+    }
+    .customerInfo{
+        margin-left: 5%;
+        
+    }
+    .reveiwCardAvatarName{
+        margin-bottom: 0px;
+        color: springgreen;
+        
+    }
+    .reveiwCardAvatarTitle{
+        margin-top: 0px;
+        color: springgreen;
+        margin-bottom: 0px;
+    }
+    .contentUs{
+        background-color: cornflowerblue;}    
+    .contentUsText{
+        font-size: 2.5rem;
+        text-align: center;
+        color: floralwhite;}
+    .contentUsTextC{
+        color: springgreen;
+    }    
+    .contentUsBox{
+        display: grid;
+        grid-template-columns: repeat(1,2fr);
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+        gap: 3rem;
+    }
+    .map{
+        width: 100%;
+        border-radius: 2%;
+    }
+    .quoteText{
+        font-size: 2rem;
+        color: cornflowerblue;
+    }
+    .messageBox{
+        background-color: white; 
+        padding: 6rem 2rem;
+        border-radius: 10px;
+    }
+    .messageForm{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-self: center;
+        height: 80%;
+    }
+    #firstName{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    #lastName{
+        grid-column-start: 2;
+        grid-row: 1;
+        grid-column-end: 2;
+        grid-row-end: 1;
+    }
+    #telephone{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    } 
+    #yourProgram{   
+        grid-column-start: 1;
+        grid-row-start: 3;
+        grid-column-end: 3;
+        grid-row-end: 4;
+    }
+    .submitButton{
+        cursor: pointer;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        border-style: none;
+        border-radius: 5px;
+        margin-top: 0%;
+    }
+    .submitButton:hover{
+        background-color: cornflowerblue;
+        color: springgreen;
+    }
+    }
+/* laptop */
+@media screen and (min-width:1024px) and (max-width:1439px) {
+    body{
+        margin: 0px;
+    }
+    .navbar{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        background-color: cornflowerblue;
+    }
+    .unlist{
+        display: flex;
+        list-style: none;
+        gap: 2rem;
+        align-items: center;
+        color: floralwhite;
+        cursor: pointer;
+    }
+    .link:hover{
+        color: springgreen;
+        cursor: pointer;
+    }
+    .textTopMain{
+        position: absolute;
+        top: 40%;
+        left: 5%;
+        background-color: #00000003;
+        color: white;
+    }
+    .headTextMain{
+        font-size: 72px;
+        font-weight: 700;
+        line-height: 1.2;
+        margin: 0 0 10px;
+    
+    }
+    .subTextMain{
+        font-size: 20px;
+        margin-bottom: 30px;
+        font-weight: 700;
+        line-height: 1.2;
+        margin: 0 0 10px;
+    }
+    .textMain{
+        font-size: 20px;
+    }
+    .buttonMain{
+        margin-left: 35%;
+        background-color: #00000003;
+        color: white;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        line-height: 1;
+        padding: 16px 24px;
+        text-align: center;
+        text-transform: uppercase;
+        width: auto;
+        border: white 1px solid;
+    }
+    .buttonMain:hover{
+        color: springgreen;
+        border: springgreen 1px solid;
+    }
+    .contentInfo{
+        display: flex;
+        gap: 1rem;
+        padding: 2rem 0rem;
+        align-content: space-between;
+    }
+    .contentInfoImg{
+        height: 90%;
+    }
+    .contentInfoText{
+        font-size: .9rem;
+    }
+    .bookingButton{
+        display: flex;
+        border-style: none;
+        border-radius: 15px;
+        width: 20%;
+        cursor: pointer;
+        height: 3rem;
+        align-self: center;
+        font-size: 1rem;
+        align-items: center;
+        padding: 0rem 4rem;
+    }
+    .bookingButton:hover{
+        background-color: cornflowerblue;
+        color: springgreen;
+    }
+    .services{
+        background-color: cornflowerblue;
+        padding: 1rem 0rem;
+    }
+    .servicesMainText{
+        color: floralwhite;
+        font-size: 3rem;
+    }
+    .servicesTextC{
+        color: springgreen;
+    }
+    .cardsRemover{
+        display: grid;
+        grid-template-columns: repeat(3,2fr);
+        gap: 3rem;
+    }
+    .cards{
+        background-color: white;
+        border-radius: 8px;
+        text-align: center;
+    }
+    .cardImg{
+        height: 10rem;
+    }
+    .greenArrow{
+        color: springgreen;
+        cursor: pointer;
+    }
+    .textCardBox{
+        padding-bottom:10% ;
+    }
+    .cardsTextM{
+        font-size: 2rem;
+        color: cadetblue;
+        margin-bottom: 0px;
+        text-align: center;
+    }
+    .cardsTextR{
+        display: inline;
+        font-size: 1.5rem;
+        color: cadetblue;
+        text-align: center;
+        margin-right: 10px;
+        margin-left: 8%;
+        cursor: pointer;
+    }
+    .cardsTextR:hover{
+        cursor: pointer;
+        color: springgreen;
+    }
+    .aboutUs{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        padding: 0rem;
+    }
+    .aboutText{
+        color: cornflowerblue;
+        font-size: 3rem;
+    }
+    .fakeImgMe{
+        width: 70%;
+        border-radius: 5%;
+        
+    }
+    .TextAboutMe{
+        align-self: center;
+    }
+    .fakeTextAboutMe{
+        font-size: 1rem;
+        line-height: 1.5rem;
+        color: deepskyblue;
+    }
+    .learnAboutMe{
+        padding: 1rem;
+        border-radius: 15px;
+        border-style: none;
+        width: 75%;
+        cursor: pointer;
+    }
+    .learnAboutMe:hover{
+        background-color: cornflowerblue;
+        color: springgreen;
+    }
+    .banding{
+    
+    }
+    .bandText{
+        color: cornflowerblue;
+        text-align: center;
+        font-size: 3rem;
+        margin-bottom: 0px;
+    }
+    .bandingImgs{
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        gap: 2rem;
+        padding: 2rem 0rem 4rem ;
+    }
+    .bandLogo1{
+        height: 10rem;
+    }
+    .bandLogo2{
+        height: 5rem;
+        align-self: center;
+    }
+    .bandLogo3{
+        align-self: stretch;
+    }
+    .bandLogo4{
+        height: 10rem;
+    }
+    .bandLogo5{
+        height: 10rem;
+    }
+    
+    .faq{
+        display: grid;
+        grid-template-columns: repeat(2,2fr);
+        background-color: cornflowerblue;
+        padding: 2rem 0rem;
+    }
+    .carFaqImgBox{
+    }
+    .carFaqImg{
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+    }
+    .faqGroup{  
+        background-color: white;
+        border-radius: 20px;
+        padding: 1rem;
+        margin: 1rem;
+        }
+    .mainFaqText{   
+        font-size: 3rem;
+        color: cadetblue;}
+    .textFaqGroup{
+    }
+    .question,.question4 ,.question5 {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        border-bottom-style: solid;
+        border-bottom-color: springgreen;
+        color: cornflowerblue;
+    }    
+    .answer,.answer4 ,.answer5 {
+        color: cornflowerblue;
+    }
+    .reveiw{}
+    .reveiwTile{
+        text-align: center;
+        font-size: 3rem;
+        color: cadetblue;
+    }
+    .reveiwSubText{
+        text-align: center;
+        font-size: 2rem;
+        color: cornflowerblue;
+    }
+    .reveiwCardGroup{
+        display: grid;
+        grid-template-columns: repeat(3,2fr);
+        gap: 3rem;
+    }
+    .reveiwCard{}
+    .reveiwCardMainText{
+        font-size: 1.5rem;
+        color: cornflowerblue;
+    }
+    .reveiwCardSubText{
+        color: cornflowerblue;
+    }
+    .avatarInfo{
+        display: flex;
+    }
+    .reveiwCardImg{
+        border-radius: 50%;
+        height: 50px;
+    }
+    .customerInfo{
+        margin-left: 5%;
+        
+    }
+    .reveiwCardAvatarName{
+        margin-bottom: 0px;
+        color: springgreen;
+        
+    }
+    .reveiwCardAvatarTitle{
+        margin-top: 0px;
+        color: springgreen;
+        margin-bottom: 0px;
+    }
+    .contentUs{
+        background-color: cornflowerblue;}    
+    .contentUsText{
+        font-size: 2.5rem;
+        text-align: center;
+        color: floralwhite;}
+    .contentUsTextC{
+        color: springgreen;
+    }    
+    .contentUsBox{
+        display: grid;
+        grid-template-columns: repeat(2,2fr);
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+        gap: 5rem;
+    }
+    .map{
+        width: 100%;
+        height: 100%;
+        border-radius: 2%;
+    }
+    .quoteText{
+        font-size: 2rem;
+        color: cornflowerblue;
+    }
+    .messageBox{
+        background-color: white; 
+        padding: 5rem 2rem;
+        border-radius: 10px;
+    }
+    .messageForm{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-self: center;
+        height: 80%;
+    }
+    #firstName{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    #lastName{
+        grid-column-start: 2;
+        grid-row: 1;
+        grid-column-end: 2;
+        grid-row-end: 1;
+    }
+    #telephone{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    } 
+    #yourProgram{   
+        grid-column-start: 1;
+        grid-row-start: 3;
+        grid-column-end: 3;
+        grid-row-end: 4;
+    }
+    .submitButton{
+        cursor: pointer;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        border-style: none;
+        border-radius: 5px;
+        margin-top: 5%;
+    }
+    .submitButton:hover{
+        background-color: cornflowerblue;
+        color: springgreen;
+    }
+    }
+
+/* tv */
+@media screen and (min-width:2560px) {
+    body{
+        margin: 0px;
+    }
+    .navbar{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        background-color: cornflowerblue;
+    }
+    .navImg{
+        height: 100%;
+    }
+    .unlist{
+        display: flex;
+        list-style: none;
+        gap: 2rem;
+        font-size: 3rem;
+        align-items: center;
+        color: floralwhite;
+        cursor: pointer;
+    }
+    .link:hover{
+        color: springgreen;
+        cursor: pointer;
+    }
+    .textTopMain{
+        position: absolute;
+        top: 30%;
+        left: 5%;
+        background-color: #00000003;
+        color: white;
+    }
+    .headTextMain{
+        font-size: 10rem;
+        font-weight: 700;
+        line-height: 1.2;
+        margin: 0 0 10px;
+    
+    }
+    .subTextMain{
+        font-size: 5rem;
+        margin-bottom: 30px;
+        font-weight: 700;
+        line-height: 1.2;
+        margin: 10px;
+    }
+    .textMain{
+        font-size: 5rem;
+        margin-bottom: 3rem;
+        margin-top: 2rem;
+    }
+    .buttonMain{
+        margin-left: 25%;
+        background-color: #00000003;
+        color: white;
+        cursor: pointer;
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: 2px;
+        line-height: 1;
+        padding: 3rem 10rem;
+        text-align: center;
+        text-transform: uppercase;
+        width: auto;
+        border: white 1px solid;
+    }
+    .buttonMain:hover{
+        color: springgreen;
+        border: springgreen 1px solid;
+    }
+    .contentInfo{
+        display: flex;
+        gap: 1rem;
+        padding: 2rem 0rem;
+        align-content: space-between;
+    }
+    .contentInfoImg{
+        height: auto;
+    }
+    .contentInfoText{
+        font-size: 2rem;
+    }
+    .bookingButton{
+        border-style: none;
+        border-radius: 15px;
+        width: 15%;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+    .bookingButton:hover{
+        background-color: cornflowerblue;
+        color: springgreen;
+    }
+    .services{
+        background-color: cornflowerblue;
+        padding: 1rem 0rem;
+    }
+    .servicesMainText{
+        color: floralwhite;
+        font-size: 6rem;
+    }
+    .servicesTextC{
+        color: springgreen;
+    }
+    .cardsRemover{
+        display: grid;
+        grid-template-columns: repeat(3,2fr);
+        gap: 3rem;
+    }
+    .cards{
+        background-color: white;
+        border-radius: 8px;
+        text-align: center;
+    }
+    .cardImg{
+        height: 10rem;
+    }
+    .greenArrow{
+        color: springgreen;
+        cursor: pointer;
+    }
+    .textCardBox{
+        padding-bottom:10% ;
+    }
+    .cardsTextM{
+        font-size: 4rem;
+        color: cadetblue;
+        margin-bottom: 0px;
+        text-align: center;
+    }
+    .cardsTextR{
+        display: inline;
+        font-size: 3rem;
+        color: cadetblue;
+        text-align: center;
+        margin-right: 10px;
+        margin-left: 8%;
+        cursor: pointer;
+    }
+    .cardsTextR:hover{
+        cursor: pointer;
+        color: springgreen;
+    }
+    .aboutUs{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        padding: 0rem;
+    }
+    .aboutText{
+        color: cornflowerblue;
+        font-size: 10rem;
+    }
+    .fakeImgMe{
+        width: 70%;
+        border-radius: 5%;
+        
+    }
+    .TextAboutMe{
+        align-self: center;
+    }
+    .fakeTextAboutMe{
+        font-size: 3rem;
+        line-height: 4rem;
+        color: deepskyblue;
+    }
+    .learnAboutMe{
+        padding: 1.5rem;
+        border-radius: 15px;
+        border-style: none;
+        width: 50%;
+        font-size: 3rem;
+        cursor: pointer;
+    }
+    .learnAboutMe:hover{
+        background-color: cornflowerblue;
+        color: springgreen;
+    }
+    .banding{
+    
+    }
+    .bandText{
+        color: cornflowerblue;
+        text-align: center;
+        font-size: 6rem;
+        margin-bottom: 0px;
+    }
+    .bandingImgs{
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        gap: 2rem;
+        padding: 2rem 0rem 4rem ;
+    }
+    .bandLogo1{
+        height: 10rem;
+    }
+    .bandLogo2{
+        height: 5rem;
+        align-self: center;
+    }
+    .bandLogo3{
+        align-self: stretch;
+    }
+    .bandLogo4{
+        height: 10rem;
+    }
+    .bandLogo5{
+        height: 10rem;
+    }
+    
+    .faq{
+        display: grid;
+        grid-template-columns: repeat(2,2fr);
+        background-color: cornflowerblue;
+        padding: 2rem 0rem;
+    }
+    .carFaqImgBox{
+    }
+    .carFaqImg{
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+    }
+    .faqGroup{  
+        background-color: white;
+        border-radius: 20px;
+        padding: 1rem;
+        margin: 1rem;
+        }
+    .mainFaqText{   
+        font-size: 8rem;
+        color: cadetblue;}
+    .textFaqGroup{
+    }
+    .question,.question4 ,.question5 {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        border-bottom-style: solid;
+        border-bottom-color: springgreen;
+        color: cornflowerblue;
+        font-size: 2rem;
+    }    
+    .answer,.answer4 ,.answer5 {
+        color: cornflowerblue;
+        font-size: 2rem;
+    }
+    .subTextAnswer{
+        font-size: 2rem;
+    }
+    .reveiw{}
+    .reveiwTile{
+        text-align: center;
+        font-size: 7rem;
+        color: cadetblue;
+    }
+    .reveiwSubText{
+        text-align: center;
+        font-size: 4rem;
+        color: cornflowerblue;
+    }
+    .reveiwCardGroup{
+        display: grid;
+        grid-template-columns: repeat(3,2fr);
+        gap: 3rem;
+    }
+    .reveiwCard{}
+    .reveiwCardMainText{
+        font-size: 2rem;
+        color: cornflowerblue;
+    }
+    .reveiwCardSubText{
+        color: cornflowerblue;
+        font-size: 2rem;
+    }
+    .avatarInfo{
+        display: flex;
+    }
+    .reveiwCardImg{
+        border-radius: 50%;
+        height: 15rem;
+    }
+    .customerInfo{
+        margin-left: 5%;
+        
+    }
+    .reveiwCardAvatarName{
+        margin-bottom: 0px;
+        color: springgreen;
+        font-size: 4rem;
+        
+    }
+    .reveiwCardAvatarTitle{
+        margin-top: 0px;
+        color: springgreen;
+        margin-bottom: 0px;
+        font-size: 4rem;
+    }
+    .contentUs{
+        background-color: cornflowerblue;}    
+    .contentUsText{
+        font-size: 5rem;
+        text-align: center;
+        color: floralwhite;}
+    .contentUsTextC{
+        color: springgreen;
+    }    
+    .contentUsBox{
+        display: grid;
+        grid-template-columns: repeat(2,2fr);
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+        gap: 5rem;
+    }
+    .map{
+        border-radius: 2%;
+    }
+    .quoteText{
+        font-size: 5rem;
+        color: cornflowerblue;
+    }
+    .messageBox{
+        background-color: white; 
+        padding: 1rem 7rem 8rem 1rem;
+        border-radius: 10px;
+    }
+    .messageForm{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-self: center;
+        height: 80%;
+    }
+    #firstName{
+        font-size: 2rem;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    #lastName{
+        font-size: 2rem;
+        grid-column-start: 2;
+        grid-row: 1;
+        grid-column-end: 2;
+        grid-row-end: 1;
+    }
+    #telephone{
+        font-size: 2rem;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    } 
+    #yourProgram{   
+        font-size: 2rem;
+        grid-column-start: 1;
+        grid-row-start: 3;
+        grid-column-end: 3;
+        grid-row-end: 4;
+    }
+    .submitButton{
+        cursor: pointer;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        border-style: none;
+        border-radius: 5px;
+        margin-top: 3%;
+        font-size: 4rem;
+    }
+    .submitButton:hover{
+        background-color: cornflowerblue;
+        color: springgreen;
+    }
+    }
+/* 
+note: think of group 600px upto 700px togetter  
+*/
